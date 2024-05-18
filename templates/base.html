@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/ambiguous.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>{% block title %}Ambiguous-Home{% endblock%}</title>
+</head>
+
+
+  <body >
+   
+    <section id="nav-section">
+      <nav>
+        <a id="menu-selection" href="#">
+          <i id="Menu-Btn" class='bx bx-menu menu-icon' ></i>
+          <span id="Menu-Btn-link">Menu</span>
+         </a>
+        <!-- all sidebar components -->
+        <div class="sidebar">
+          <span class="sidebar-content">
+            <ul class="lists">
+               <li class="list">
+                 <a href="/base" class="nav-link">
+                  <i class='bx bx-home-alt menu-icon'></i>
+                  <span id="span-Id" class="link">Home</span>
+                 </a>
+               </li>
+               <li class="list">
+                 <a href="/shows" class="nav-link">
+                  <i class='bx bx-speaker menu-icon'></i>
+                  <span id="span-Id" class="link">Shows</span>
+                 </a>
+               </li>
+               <li class="list">
+                 <a href="/shop" class="nav-link">
+                  <i class='bx bx-cart-alt menu-icon'></i>
+                  <span id="span-Id" class="link">Shop</span>
+                 </a>
+               </li>
+               <li class="list">
+                 <a href="/about" class="nav-link">
+                  <i class='bx bx-group menu-icon'></i>
+                  <span id="span-Id" class="link">About</span>
+                 </a>
+               </li>
+               <li class="list">
+                 <a href="/contact" class="nav-link">
+                  <i class='bx bx-message menu-icon'></i>
+                  <span id="span-Id" class="link">Contact</span>
+                 </a>
+               </li>
+            </ul>
+          </span>
+          <span id="links-to-social">
+            <a href="https://www.facebook.com/me/" >
+              <i id="social-icons" class='bx bxl-facebook-circle' style='color:#1849d2'  ></i>
+            </a>
+            
+            <a href="https://www.instagram.com/_ambiguous2021_/?igsh=MXVoM2h4MG11dXJ6ag%3D%3D" >
+              <i id="social-icons" class='bx bxl-instagram' style="background-image:linear-gradient(to top right, #23ad0e, #fccc63, #bc2a8d, #8a3ab9)" ></i>
+            </a>
+          
+            <a href="https://open.spotify.com/artist/19XpkHAyYwFBGZnWXnRlzp" >
+              <i id="social-icons" class='bx bxl-spotify' style='color:#23ad0e'  ></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UC9SbTLyLJRHZj4Q6uRSemnQ" >
+              <i id="social-icons" class='bx bxl-youtube' style='color:#ee2e2e'  ></i>
+            </a>
+            </span>
+        </div>
+      </nav>
+
+      <section class="overlay">
+
+      </section>
+    </section>
+    <Section id="BgGreet" >
+      <!-- <time id="time"></time> -->
+      <div id="logo">
+        <img  src="static/Band Logo Website.png" height="90px" width="450px"> 
+     </div>
+       
+    <main id="content">
+     {% block content%}
+     
+     {% endblock%}
+
+    </main>
+        <H1>
+          <span id="greeting"></span>
+          <span id="name"></span>
+        </H1>
+      
+   </Section>
+   <canvas class="background"></canvas>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="static/particles.js"></script>
+    <script src="static/ambiguous.js"> </script>
+    
+    
+  </body>
+</html>
